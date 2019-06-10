@@ -1,0 +1,14 @@
+{
+    "name": "francoischaumont/dropbox-googledrive-clients",
+    "description": "Storage Account App (code assignment)",
+    "require": {
+        "php": "^7.0",
+        "google/apiclient": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Francois Chaumont",
+            "email": "francoischaumontwork@gmail.com"
+        }
+    ]
+}

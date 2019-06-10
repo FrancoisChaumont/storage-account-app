@@ -1,0 +1,65 @@
+#######################
+# Storage Account App #
+#######################
+
+Author: Francois Chaumont
+Version: 0.1
+Last modified: 3/19/2018
+
+
+
+TOPIC: 
+Build an app whose main functionality is to copy items (files and folders) from one online storage account to another.
+
+This project is based on a code assignment for developer candidates which PDF can be found in the _docs folder.
+
+This is a demo version with no intention to cover every functionality provided by either storage provider API.
+It will stricly stick to the assignment spec.
+
+
+
+REQUIREMENTS:
+- Requires PHP 7.0+ to run
+- Requires Google API client 2.0+
+- Uses Dropbox API v2
+
+INSTALLATION:
+- If the folder "vendor" is not present, run the command "composer install"
+- For the purpose of having the app running without further setup, it is provided with clients id and secret,
+    but they will be canceled in time. Feel free to create your own apps per storage provider, generate
+    the corresponding ids and secrets and place them in the place them in the corresponding file 
+    located in the folder "client-secrets" (see documentation below)
+
+EXECUTION:
+- In a terminal console, run the commande "php run.php" from the root directory
+- You will be prompt during the first run to follow a web link to authorize the app with both storage providers.
+    Just follow the instructions, copy/paste the give token and you are good to go until Google's token expires
+    then you will prompt to refresh the authorization/the token.
+
+
+
+As there are only 2 providers implemented, the app only prompt for the source choice, the destination being 
+defected to the remainer, although this would only require a few changes in the run flow.
+
+As it is a CLI app, you will be asked to copy/paste character strings either from within the app itself or from your browser.
+
+The run flow is fairly straight forward and captions help you at every steps.
+
+
+
+
+        API DOCUMENTATION
+
+    ### Google Drive API ###
+
+Some useful documentation links:
+https://developers.google.com/drive/v3/web/quickstart/php
+https://developers.google.com/api-client-library/php
+https://developers.google.com/drive/v3/web/about-auth
+
+
+        ### Dropbox ###
+
+Some useful documentation links:
+https://www.dropbox.com/developers/documentation/http/overview
+
